@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ rug['name'] }} - Rug Details</title>
+</head>
+<body>
+    <h1>{{ rug['name'] }} Details</h1>
+    <img src="{{ url_for('static', filename='images/' + rug['image']) }}" alt="{{ rug['name'] }}" width="300">
+    <p>Name: {{ rug['name'] }}</p>
+    <p>Price: ${{ rug['price'] }}</p>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
